@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarea în Bucate - Restaurant Tradițional Românesc</title>
+    <meta name="description" content="Restaurant tradițional românesc - Mâncare ca la mama acasă">
+
+    <!-- Google Fonts: Playfair Display pentru titluri, Cormorant pentru body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stilurile site-ului -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- 1. NAVBAR - bara de navigare sticky          -->
+    <!-- ============================================ -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#acasa" class="nav-logo">
+                <span class="logo-mark">S</span>
+                <span class="logo-text">Sarea în Bucate</span>
+            </a>
+
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#acasa">Acasă</a></li>
+                <li><a href="#despre">Despre Noi</a></li>
+                <li><a href="#locatii">Locații</a></li>
+                <li><a href="#meniu">Meniu</a></li>
+                <li><a href="#comanda">Comandă <span id="cos-badge" class="cos-badge">0</span></a></li>
+                <li><a href="#rezervare">Rezervare</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#cont" id="nume-navbar">Contul Meu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Buton hamburger pentru mobil -->
+            <button id="burger" class="burger" aria-label="Meniu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================ -->
+    <!-- 2. HERO - secțiunea principală fullscreen    -->
+    <!-- ============================================ -->
+    <section id="acasa" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tag">Bucătărie tradițională · Din 1998</span>
+            <h1 class="hero-title">Sarea în Bucate</h1>
+            <p class="hero-subtitle">Gustul tradiției românești</p>
+            <p class="hero-text">Mâncare ca la mama acasă</p>
+            <div class="hero-buttons">
+                <a href="#meniu" class="btn btn-primary">Vezi Meniul</a>
+                <a href="#rezervare" class="btn btn-secondary">Rezervă Masă</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 3. DESPRE NOI                                -->
+    <!-- ============================================ -->
+    <section id="despre" class="section despre">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">— Povestea noastră</span>
+                <h2 class="section-title">Despre Noi</h2>
+            </div>
+
+            <div class="despre-grid">
+                <div class="despre-text">
+                    <p class="lead">
+                        La Sarea în Bucate gătim cu suflet, după rețete moștenite din generație în generație.
+                    </p>
+                    <p>
+                        De peste douăzeci de ani, restaurantul nostru păstrează vie tradiția bucătăriei românești.
+                        Folosim ingrediente locale, proaspete, alese cu grijă de la producători din zona Vâlcei,
+                        pentru ca fiecare farfurie să poarte gustul autentic al satului românesc.
+                    </p>
+                    <p>
+                        Atmosfera este caldă și familială - exact așa cum era acasă la bunici, când mirosul de sarmale
+                        și cozonac umplea toată curtea.
+                    </p>
+                </div>
+
+                <div class="despre-cards">
+                    <!-- Cele 4 carduri solicitate -->
+                    <div class="card-mic">
+                        <div class="card-numar">01</div>
+                        <h3>Rețete tradiționale</h3>
+                        <p>Preparate după rețete autentice, transmise din generație în generație.</p>
+                    </div>
+                    <div class="card-mic">
+                        <div class="card-numar">02</div>
+                        <h3>Ingrediente locale</h3>
+                        <p>Produse proaspete de la fermieri din zona Vâlcei și a Olteniei.</p>
+                    </div>
+                    <div class="card-mic">
+                        <div class="card-numar">03</div>
+                        <h3>Atmosferă familială</h3>
+                        <p>Un loc cald, primitor, unde te simți ca acasă la bunici.</p>
+                    </div>
+                    <div class="card-mic">
+                        <div class="card-numar">04</div>
+                        <h3>Gust autentic</h3>
+                        <p>Fiecare preparat poartă în el sufletul bucătăriei românești.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 4. LOCATII - 2 locații cu imagini            -->
+    <!-- ============================================ -->
+    <section id="locatii" class="section locatii">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">— Două spații, aceeași tradiție</span>
+                <h2 class="section-title">Locațiile Noastre</h2>
+            </div>
+
+            <div class="locatii-grid">
+                <!-- Locația centrală -->
+                <article class="locatie-card">
+                    <div class="locatie-img">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80&auto=format&fit=crop" alt="Restaurant elegant Sarea în Bucate - Locația Centrală" loading="lazy">
+                    </div>
+                    <div class="locatie-info">
+                        <span class="locatie-eticheta">Locația Centrală</span>
+                        <h3>Restaurantul Principal</h3>
+                        <p>Un spațiu elegant, cu lumină caldă și atmosferă rafinată. Ideal pentru cine de seară, întâlniri de afaceri și ocazii speciale.</p>
+                        <ul class="locatie-detalii">
+                            <li><strong>Adresă:</strong> Strada General Magheru nr. 12, Râmnicu Vâlcea</li>
+                            <li><strong>Program:</strong> Luni - Duminică, 11:00 - 23:00</li>
+                            <li><strong>Telefon:</strong> 0250 711 222</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Locația rezidențială -->
+                <article class="locatie-card">
+                    <div class="locatie-img">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=80&auto=format&fit=crop" alt="Restaurant cozy Sarea în Bucate - Locația Rezidențială" loading="lazy">
+                    </div>
+                    <div class="locatie-info">
+                        <span class="locatie-eticheta">Locația Rezidențială</span>
+                        <h3>Restaurantul de Cartier</h3>
+                        <p>Un loc cozy, familial, perfect pentru prânzul de duminică alături de cei dragi. Atmosferă caldă, rustică, autentic românească.</p>
+                        <ul class="locatie-detalii">
+                            <li><strong>Adresă:</strong> Bulevardul Tudor Vladimirescu nr. 45, Râmnicu Vâlcea</li>
+                            <li><strong>Program:</strong> Luni - Duminică, 12:00 - 22:00</li>
+                            <li><strong>Telefon:</strong> 0250 733 444</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 5. MENIU - text only, fără imagini per item  -->
+    <!-- ============================================ -->
+    <section id="meniu" class="section meniu">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">— Bucătărie autentică românească</span>
+                <h2 class="section-title">Meniul Nostru</h2>
+                <p class="section-sub">Selectează, caută și adaugă în coș preparatele preferate.</p>
+            </div>
+
+            <!-- Bara de instrumente: căutare + sortare -->
+            <div class="meniu-toolbar">
+                <input type="text" id="cautare" class="cautare" placeholder="Caută un preparat...">
+                <select id="sortare" class="sortare">
+                    <option value="default">Sortare implicită</option>
+                    <option value="pret-asc">Preț crescător</option>
+                    <option value="pret-desc">Preț descrescător</option>
+                    <option value="nume">După nume (A-Z)</option>
+                </select>
+            </div>
+
+            <!-- Filtre după categorii -->
+            <div class="filtre">
+                <button class="filtru-btn activ" data-categorie="toate">Toate</button>
+                <button class="filtru-btn" data-categorie="aperitive">Aperitive</button>
+                <button class="filtru-btn" data-categorie="ciorbe">Ciorbe</button>
+                <button class="filtru-btn" data-categorie="principale">Feluri principale</button>
+                <button class="filtru-btn" data-categorie="garnituri">Garnituri</button>
+                <button class="filtru-btn" data-categorie="deserturi">Deserturi</button>
+                <button class="filtru-btn" data-categorie="bauturi">Băuturi</button>
+            </div>
+
+            <!-- Aici se vor genera dinamic cardurile cu preparate, din JS -->
+            <div id="meniu-container" class="meniu-grid"></div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 6. COS / COMANDA                             -->
+    <!-- ============================================ -->
+    <section id="comanda" class="section comanda">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">— Coșul tău</span>
+                <h2 class="section-title">Comanda Mea</h2>
+                <p class="section-sub">Verifică preparatele alese și finalizează comanda.</p>
+            </div>
+
+            <div class="cos-wrapper">
+                <!-- Lista produselor adăugate, generată din JS -->
+                <div id="cos-container" class="cos-container"></div>
+
+                <!-- Total + buton finalizare -->
+                <div class="cos-total-box">
+                    <div class="cos-total-row">
+                        <span>Total comandă:</span>
+                        <strong id="cos-total">0 lei</strong>
+                    </div>
+                    <button id="btn-checkout" class="btn btn-primary btn-block">Finalizează Comanda</button>
+                    <p class="cos-info">* Simulare fără bază de date - comanda este doar demonstrativă</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 7. REZERVARE                                 -->
+    <!-- ============================================ -->
+    <section id="rezervare" class="section rezervare">
+        <div class="container container-stramt">
+            <div class="section-header center">
+                <span class="section-label">— Asigură-ți locul</span>
+                <h2 class="section-title">Rezervă o Masă</h2>
+                <p class="section-sub">Completează formularul și îți confirmăm rezervarea în cel mai scurt timp.</p>
+            </div>
+
+            <form id="form-rezervare" class="form-elegant">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="rez-nume">Nume complet</label>
+                        <input type="text" id="rez-nume" placeholder="Ion Popescu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rez-telefon">Telefon</label>
+                        <input type="tel" id="rez-telefon" placeholder="07XX XXX XXX" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rez-email">Email</label>
+                    <input type="email" id="rez-email" placeholder="exemplu@email.ro" required>
+                </div>
+
+                <div class="form-row form-row-3">
+                    <div class="form-group">
+                        <label for="rez-persoane">Persoane</label>
+                        <select id="rez-persoane" required>
+                            <option value="">Selectează</option>
+                            <option value="1">1 persoană</option>
+                            <option value="2">2 persoane</option>
+                            <option value="3">3 persoane</option>
+                            <option value="4">4 persoane</option>
+                            <option value="5">5 persoane</option>
+                            <option value="6">6 persoane</option>
+                            <option value="7+">7 sau mai multe</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="rez-data">Dată</label>
+                        <input type="date" id="rez-data" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rez-ora">Oră</label>
+                        <input type="time" id="rez-ora" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Trimite Rezervarea</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 8. CONT UTILIZATOR (DEMO)                    -->
+    <!-- ============================================ -->
+    <section id="cont" class="section cont">
+        <div class="container container-stramt">
+            <div class="section-header center">
+                <span class="section-label">— Acces personal</span>
+                <h2 class="section-title">Contul Meu</h2>
+                <p class="section-sub">Sistem demonstrativ - datele se salvează doar local pe acest dispozitiv.</p>
+            </div>
+
+            <!-- Stare: utilizator NEautentificat - afișează formulare -->
+            <div id="cont-neautentificat" class="cont-neauten">
+                <!-- Tab-uri pentru login / înregistrare -->
+                <div class="cont-taburi">
+                    <button class="tab-btn activ" data-tab="login">Autentificare</button>
+                    <button class="tab-btn" data-tab="register">Cont Nou</button>
+                </div>
+
+                <!-- Formular autentificare -->
+                <form id="form-autentificare" class="form-elegant tab-continut activ" data-tab="login">
+                    <div class="form-group">
+                        <label for="log-email">Email</label>
+                        <input type="email" id="log-email" placeholder="exemplu@email.ro" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="log-parola">Parolă</label>
+                        <input type="password" id="log-parola" placeholder="Parola ta" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Autentificare</button>
+                </form>
+
+                <!-- Formular înregistrare -->
+                <form id="form-inregistrare" class="form-elegant tab-continut" data-tab="register">
+                    <div class="form-group">
+                        <label for="reg-nume">Nume complet</label>
+                        <input type="text" id="reg-nume" placeholder="Ion Popescu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email">Email</label>
+                        <input type="email" id="reg-email" placeholder="exemplu@email.ro" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-parola">Parolă</label>
+                        <input type="password" id="reg-parola" placeholder="Minim 6 caractere" required minlength="6">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Creează Cont</button>
+                </form>
+            </div>
+
+            <!-- Stare: utilizator autentificat - afișează profil -->
+            <div id="cont-autentificat" class="cont-auten" style="display: none;">
+                <div class="profil-card">
+                    <div class="profil-avatar">
+                        <span id="profil-initiala">U</span>
+                    </div>
+                    <h3>Bun venit, <span id="nume-utilizator">Utilizator</span>!</h3>
+                    <p class="profil-email" id="profil-email"></p>
+                    <p>Te-ai autentificat cu succes în contul tău demo.</p>
+                    <button id="btn-deconectare" class="btn btn-secondary">Deconectare</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 9. GALERIE - 6 imagini cu lightbox           -->
+    <!-- ============================================ -->
+    <section id="galerie" class="section galerie">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">— În imagini</span>
+                <h2 class="section-title">Galerie</h2>
+                <p class="section-sub">O privire asupra preparatelor și atmosferei restaurantului nostru.</p>
+            </div>
+
+            <div class="galerie-grid">
+                <!-- 6 imagini autentice: sarmale, mămăligă, papanași, cozonac, interior, masă -->
+                <!-- Imaginile cu preparate românești sunt de pe Wikimedia Commons (CC BY-SA) -->
+                <div class="galerie-item" onclick="deschideLightbox(this)">
+                    <img src="images/sarmale.jpg" alt="Sarmale tradiționale cu mămăligă" loading="lazy">
+                    <span class="galerie-caption">Sarmale</span>
+                </div>
+                <div class="galerie-item" onclick="deschideLightbox(this)">
+                    <img src="images/mamaliga.jpg" alt="Mămăligă cu brânză - bulz ciobănesc" loading="lazy">
+                    <span class="galerie-caption">Mămăligă</span>
+                </div>
+                <div class="galerie-item" onclick="deschideLightbox(this)">
+                    <img src="images/papanasi.jpg" alt="Papanași cu cireșe și smântână" loading="lazy">
+                    <span class="galerie-caption">Papanași</span>
+                </div>
+                <div class="galerie-item" onclick="deschideLightbox(this)">
+                    <img src="images/cozonac.jpg" alt="Cozonac împletit cu stafide" loading="lazy">
+                    <span class="galerie-caption">Cozonac</span>
+                </div>
+                <div class="galerie-item" onclick="deschideLightbox(this)">
+                    <img src="images/interior.jpg" alt="Interior restaurant cu lumină caldă" loading="lazy">
+                    <span class="galerie-caption">Interior</span>
+                </div>
+                <div class="galerie-item" onclick="deschideLightbox(this)">
+                    <img src="images/masa.jpg" alt="Masă tradițională cu mai multe preparate" loading="lazy">
+                    <span class="galerie-caption">Masă tradițională</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 10. TESTIMONIALE - 3 review-uri              -->
+    <!-- ============================================ -->
+    <section class="section testimoniale">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">— Părerile clienților</span>
+                <h2 class="section-title">Ce Spun Clienții</h2>
+            </div>
+
+            <div class="testimoniale-grid">
+                <article class="testimonial-card">
+                    <div class="quote-mark">&ldquo;</div>
+                    <p class="testimonial-text">Mâncarea mi-a amintit de copilărie. Sarmalele și mămăliga sunt exact ca la bunica acasă, în Oltenia.</p>
+                    <div class="testimonial-autor">
+                        <strong>Maria Ionescu</strong>
+                        <span>Râmnicu Vâlcea</span>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="quote-mark">&ldquo;</div>
+                    <p class="testimonial-text">Atmosferă caldă și elegantă, personal foarte amabil. Un loc unde merită să te întorci de fiecare dată.</p>
+                    <div class="testimonial-autor">
+                        <strong>Andrei Popescu</strong>
+                        <span>București</span>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="quote-mark">&ldquo;</div>
+                    <p class="testimonial-text">Perfect pentru familie. Copiii au adorat papanașii, iar noi am savurat tochitura cu mămăligă.</p>
+                    <div class="testimonial-autor">
+                        <strong>Familia Dumitrescu</strong>
+                        <span>Sibiu</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 11. CONTACT                                  -->
+    <!-- ============================================ -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">— Ne găsești aici</span>
+                <h2 class="section-title">Contact</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-bloc">
+                        <h4>Adresă</h4>
+                        <p>Strada General Magheru nr. 12<br>Râmnicu Vâlcea, Județul Vâlcea<br>România</p>
+                    </div>
+                    <div class="contact-bloc">
+                        <h4>Telefon</h4>
+                        <p>0250 711 222<br>0750 123 456</p>
+                    </div>
+                    <div class="contact-bloc">
+                        <h4>Email</h4>
+                        <p>contact@sareainbucate.ro<br>rezervari@sareainbucate.ro</p>
+                    </div>
+                    <div class="contact-bloc">
+                        <h4>Program</h4>
+                        <p>Luni - Vineri: 11:00 - 23:00<br>Sâmbătă - Duminică: 10:00 - 24:00</p>
+                    </div>
+                </div>
+
+                <!-- Hartă placeholder -->
+                <div class="harta-placeholder">
+                    <div class="harta-continut">
+                        <div class="harta-pin"></div>
+                        <h4>Sarea în Bucate</h4>
+                        <p>Râmnicu Vâlcea, România</p>
+                        <span class="harta-eticheta">Hartă (placeholder)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 12. FOOTER                                   -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-bloc">
+                    <h3 class="footer-logo">Sarea în Bucate</h3>
+                    <p>Mâncare ca la mama acasă. Tradiție românească din 1998.</p>
+                </div>
+
+                <div class="footer-bloc">
+                    <h4>Navigare</h4>
+                    <ul>
+                        <li><a href="#acasa">Acasă</a></li>
+                        <li><a href="#meniu">Meniu</a></li>
+                        <li><a href="#rezervare">Rezervare</a></li>
+                        <li><a href="#galerie">Galerie</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-bloc">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Râmnicu Vâlcea, Vâlcea</li>
+                        <li>0250 711 222</li>
+                        <li>contact@sareainbucate.ro</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p><strong>Proiect realizat pentru atestatul la informatică</strong></p>
+                <p class="footer-explicatie">
+                    Site realizat folosind HTML, CSS și JavaScript. Datele sunt salvate local prin localStorage pentru simulare.
+                </p>
+                <p class="footer-copy">© 2026 Sarea în Bucate. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- ELEMENTE FLOTANTE: toast, lightbox, top      -->
+    <!-- ============================================ -->
+
+    <!-- Toast pentru notificări (înlocuiește alert) -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Lightbox pentru galerie -->
+    <div id="lightbox" class="lightbox" onclick="inchideLightbox()">
+        <button class="lightbox-close" aria-label="Închide">&times;</button>
+        <img id="lightbox-img" src="" alt="Imagine galerie">
+    </div>
+
+    <!-- Buton "back to top" -->
+    <button id="back-to-top" class="back-to-top" aria-label="Sus">
+        <span class="bt-arrow">↑</span>
+    </button>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+</body>
+</html>
