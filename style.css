@@ -355,7 +355,7 @@ input, select, textarea {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=2000&q=85&auto=format&fit=crop');
+    background-image: url('images/hero.jpg');
     background-size: cover;
     background-position: center;
     transform: scale(1.05);
